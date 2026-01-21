@@ -1,7 +1,13 @@
 # Computer Systems and Operating Systems
 
-This module explains how software interacts with the OS and hardware, which is
-critical for performance and reliability.
+This module explains how software interacts with the OS and hardware, with a
+principal-level focus on performance, resource management, and reliability.
+
+Principal-level expectations:
+- Reason about thread models, scheduling, and contention in production.
+- Set guidance on resource limits, memory usage, and I/O tuning.
+- Lead investigations for performance regressions and system bottlenecks.
+- Evaluate runtime and container choices based on operational behavior.
 
 Topics covered:
 - Processes vs threads and scheduling fundamentals.

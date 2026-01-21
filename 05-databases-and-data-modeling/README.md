@@ -1,7 +1,13 @@
 # Databases and Data Modeling
 
 This module focuses on choosing and designing data storage for backend
-applications.
+applications, with a principal-level focus on scalability and governance.
+
+Principal-level expectations:
+- Select database technologies based on consistency, scale, and cost.
+- Define data ownership boundaries and long-term schema strategy.
+- Plan migrations, replication, and sharding for growth.
+- Establish backup, restore, and disaster recovery standards.
 
 Topics covered:
 - Relational vs NoSQL database families and use cases.

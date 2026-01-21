@@ -1,6 +1,13 @@
 # Caching and Performance
 
-This module teaches how to optimize latency and throughput in backend systems.
+This module teaches how to optimize latency and throughput in backend systems,
+with a principal-level focus on performance budgets and capacity planning.
+
+Principal-level expectations:
+- Define latency targets and performance budgets across services.
+- Lead caching strategy decisions and invalidation policies.
+- Establish load testing standards and capacity plans.
+- Drive performance investigations and remediation plans.
 
 Topics covered:
 - Cache layers: client, CDN, edge, app, database.

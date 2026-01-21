@@ -1,7 +1,13 @@
 # Distributed Systems and System Design
 
 This module provides the concepts and techniques needed to design scalable,
-fault-tolerant systems.
+fault-tolerant systems, with a principal-level focus on tradeoffs and resilience.
+
+Principal-level expectations:
+- Lead system design reviews and articulate tradeoffs clearly.
+- Define consistency and availability targets for core services.
+- Establish patterns for retries, backoff, and failure isolation.
+- Drive architecture decisions for global scale and reliability.
 
 Topics covered:
 - CAP theorem and consistency models.

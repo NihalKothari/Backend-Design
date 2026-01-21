@@ -1,6 +1,13 @@
 # Observability and Monitoring
 
-This module focuses on measuring system health and troubleshooting issues.
+This module focuses on measuring system health and troubleshooting issues,
+with a principal-level focus on SLOs and operational readiness.
+
+Principal-level expectations:
+- Define SLIs, SLOs, and alerting standards for teams.
+- Ensure logs and traces support efficient root cause analysis.
+- Drive adoption of observability tooling and dashboards.
+- Establish on-call practices and escalation playbooks.
 
 Topics covered:
 - Metrics, logs, and traces and how they work together.

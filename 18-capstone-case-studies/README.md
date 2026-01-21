@@ -1,6 +1,13 @@
 # Capstone Case Studies
 
-This module applies the full curriculum to realistic system design problems.
+This module applies the full curriculum to realistic system design problems,
+with a principal-level focus on decision making and leadership.
+
+Principal-level expectations:
+- Produce end-to-end design docs with explicit tradeoffs.
+- Provide migration plans and operational readiness checklists.
+- Define success metrics, risks, and mitigation strategies.
+- Lead reviews and align cross-team stakeholders.
 
 Topics covered:
 - End-to-end system design for common domains:

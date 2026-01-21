@@ -1,7 +1,13 @@
 # Foundations and Programming Basics
 
-This module builds core programming skills and tooling habits needed for
-backend work.
+This module refreshes core programming skills with a principal-level focus on
+setting engineering standards, tooling, and maintainability across teams.
+
+Principal-level expectations:
+- Define coding standards, review checklists, and refactoring guidelines.
+- Establish tooling conventions: formatting, linting, builds, and CI hooks.
+- Create debugging and profiling playbooks for complex services.
+- Drive consistency in error handling and logging practices.
 
 Topics covered:
 - Programming fundamentals: data types, variables, control flow, functions.

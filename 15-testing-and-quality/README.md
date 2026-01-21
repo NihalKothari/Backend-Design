@@ -1,6 +1,13 @@
 # Testing and Quality
 
-This module covers how to ensure correctness and maintainability.
+This module covers how to ensure correctness and maintainability, with a
+principal-level focus on test strategy and quality governance.
+
+Principal-level expectations:
+- Define testing standards and quality gates across services.
+- Establish contract testing and compatibility checks.
+- Set coverage goals aligned with risk and criticality.
+- Lead reviews for high-impact changes and regression risk.
 
 Topics covered:
 - Unit testing patterns and best practices.
