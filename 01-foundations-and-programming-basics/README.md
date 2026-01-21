@@ -1,21 +1,33 @@
 # Foundations and Programming Basics
 
-This module builds core programming skills and scales from beginner to
-principal. It starts with fundamentals and progresses to standards, tooling,
-and maintainability across teams.
+This module builds core programming skills from beginner to principal. Each
+subtopic includes key concepts, a real-world example, and a diagram.
 
-Progression expectations:
-- Beginner: Understand basic syntax, control flow, functions, and data types.
-- Intermediate: Build small programs/services, use Git, and structure code.
-- Senior: Improve code quality through refactoring, testing, and debugging.
-- Principal: Define org-wide standards for tooling, reviews, and errors.
+## Progression expectations
 
-Topics covered:
-- Programming fundamentals: data types, variables, control flow, functions.
-- Data modeling with structs/classes, interfaces, composition.
-- Error handling, exceptions, and defensive coding practices.
-- Standard library usage, file I/O, CLI tools, environment variables.
-- Version control with Git: branching, merges, code review flow.
-- Tooling: editors, formatters, linters, build tools, package managers.
-- Debugging techniques, logging basics, and simple profiling.
-- Writing clean code: naming, modularity, readability, and refactoring.
+| Level | Outcomes |
+| --- | --- |
+| Beginner | Understand syntax, control flow, and basic data types. |
+| Intermediate | Build small programs/services and use Git effectively. |
+| Senior | Improve quality via refactoring, debugging, and tooling. |
+| Principal | Define coding standards and team-wide practices. |
+
+## How to use this module
+- Start at programming fundamentals and proceed in order.
+- Create a small artifact per subtopic (script, diagram, or checklist).
+- Revisit sections as your scope grows.
+
+## Subtopics
+1. [Programming Fundamentals](01-programming-fundamentals.md)
+2. [Structures and Modularity](02-structures-and-modularity.md)
+3. [Error Handling and Logging](03-error-handling-and-logging.md)
+4. [CLI, Files, and Environment](04-cli-files-and-environment.md)
+5. [Version Control Workflow](05-version-control-workflow.md)
+6. [Tooling and Builds](06-tooling-and-builds.md)
+7. [Debugging and Profiling](07-debugging-and-profiling.md)
+8. [Clean Code and Refactoring](08-clean-code-and-refactoring.md)
+
+## Suggested artifacts
+- Simple CLI tool with config and logging.
+- Code review checklist and formatting rules.
+- Refactoring plan for a small legacy module.
