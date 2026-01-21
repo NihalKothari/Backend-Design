@@ -18,6 +18,19 @@ your code predictable and easier to reason about under pressure.
 - Functions and parameter passing.
 - Input validation and basic error handling.
 
+## Detailed explanation
+- **Data types and variables** define how values are stored and manipulated.
+  Choosing the right type prevents bugs (for example, using integers for counts
+  and decimals for money) and avoids accidental type coercion.
+- **Control flow** determines which code executes under which conditions.
+  Early returns reduce nesting and make error paths clear, which matters when
+  handling invalid inputs or partial failures.
+- **Functions** turn repeated logic into reusable building blocks. Treat
+  function boundaries as small APIs: define clear inputs, outputs, and side
+  effects to keep behavior predictable.
+- **Input validation** is your first line of defense. Validate at boundaries,
+  return actionable errors, and avoid passing bad data deeper into the system.
+
 ## Real-world example: Simple rate limiter
 A small script rejects requests after a threshold.
 

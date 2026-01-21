@@ -18,6 +18,16 @@ consistent approach prevents misconfiguration incidents.
 - Environment variables and secrets.
 - Configuration validation and defaults.
 
+## Detailed explanation
+- **CLI arguments and flags** make tools self-documenting. Clear usage output
+  and sensible defaults reduce support burden and misconfiguration.
+- **File I/O and serialization** are common integration points. Validate data
+  when reading, and write outputs atomically to avoid partial files.
+- **Environment variables** are ideal for runtime configuration but not for
+  storing secrets in plain text. Use a secrets manager for sensitive values.
+- **Configuration validation** should fail fast at startup with clear errors.
+  This avoids ambiguous runtime behavior and hidden defaults.
+
 ## Real-world example: Config loader
 A service loads config from flags, env, and a file.
 

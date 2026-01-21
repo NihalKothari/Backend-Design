@@ -18,6 +18,16 @@ debugging and reduce outages.
 - Structured logging and log levels.
 - Correlation IDs for request tracing.
 
+## Detailed explanation
+- **Error propagation** means returning failures to the caller with context.
+  Swallowing errors hides problems and makes incidents harder to diagnose.
+- **Typed errors and codes** let clients act on failures (retry, fix input, or
+  escalate). Stable error codes also help with analytics and alerting.
+- **Structured logging** emits consistent fields (timestamp, level, request ID)
+  to enable filtering and correlation. Free-form logs are harder to search.
+- **Correlation IDs** tie a request across services and logs. They should be
+  generated at the edge and propagated through every hop.
+
 ## Real-world example: API error response
 A service returns a consistent error shape with a request ID for debugging.
 

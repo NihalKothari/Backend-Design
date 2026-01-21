@@ -18,6 +18,16 @@ performance regressions.
 - CPU and memory profiling.
 - Flame graphs and hotspots.
 
+## Detailed explanation
+- **Breakpoints and watch expressions** let you inspect live state at the moment
+  a bug occurs. Combine this with logs to understand the full request context.
+- **Reproduction steps** reduce debugging time. A minimal failing case isolates
+  the root cause and prevents chasing unrelated symptoms.
+- **CPU and memory profiling** show where time and allocations are spent.
+  Profiling should happen with realistic data to avoid misleading results.
+- **Flame graphs** visualize hotspots across call stacks. They help prioritize
+  optimizations that deliver the biggest impact.
+
 ## Real-world example: Slow endpoint
 A report endpoint slows down. Profiling reveals a slow JSON serialization step.
 

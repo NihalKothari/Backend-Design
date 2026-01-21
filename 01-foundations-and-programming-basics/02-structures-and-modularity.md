@@ -18,6 +18,19 @@ makes changes safer.
 - Composition over inheritance.
 - Modules and packaging.
 
+## Detailed explanation
+- **Structs/classes and encapsulation** group related data and behavior. By
+  hiding internal details behind methods, you reduce the chance that callers
+  rely on implementation specifics.
+- **Interfaces** define contracts between components. When higher-level code
+  depends on interfaces instead of concrete implementations, swapping
+  dependencies or testing becomes much easier.
+- **Composition over inheritance** favors small, reusable parts that can be
+  combined. Deep inheritance hierarchies are hard to reason about and often
+  leak state in unexpected ways.
+- **Modules and packaging** set boundaries for ownership and reuse. A good
+  module exposes a small public surface and keeps internal helpers private.
+
 ## Real-world example: Notification providers
 An app sends notifications via email or SMS. A common interface makes it easy
 to add providers.

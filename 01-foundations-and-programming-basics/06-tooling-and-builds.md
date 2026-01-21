@@ -17,6 +17,16 @@ Reliable tooling reduces errors and keeps teams productive.
 - Build systems and artifacts.
 - CI hooks and quality gates.
 
+## Detailed explanation
+- **Formatters and linters** enforce consistent style and catch common bugs.
+  Automated formatting reduces review noise and keeps diffs clean.
+- **Dependency management** with lock files ensures reproducible builds. It
+  prevents accidental upgrades that can change runtime behavior.
+- **Build systems and artifacts** package code into deployable units. A clean
+  build process should be deterministic and documented.
+- **CI hooks and quality gates** make quality a default. Gating merges on tests
+  and lint reduces regressions in shared codebases.
+
 ## Real-world example: CI pipeline for a service
 A pipeline formats code, runs tests, and publishes an artifact.
 
