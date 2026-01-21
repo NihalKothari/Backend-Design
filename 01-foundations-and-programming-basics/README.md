@@ -1,13 +1,14 @@
 # Foundations and Programming Basics
 
-This module refreshes core programming skills with a principal-level focus on
-setting engineering standards, tooling, and maintainability across teams.
+This module builds core programming skills and scales from beginner to
+principal. It starts with fundamentals and progresses to standards, tooling,
+and maintainability across teams.
 
-Principal-level expectations:
-- Define coding standards, review checklists, and refactoring guidelines.
-- Establish tooling conventions: formatting, linting, builds, and CI hooks.
-- Create debugging and profiling playbooks for complex services.
-- Drive consistency in error handling and logging practices.
+Progression expectations:
+- Beginner: Understand basic syntax, control flow, functions, and data types.
+- Intermediate: Build small programs/services, use Git, and structure code.
+- Senior: Improve code quality through refactoring, testing, and debugging.
+- Principal: Define org-wide standards for tooling, reviews, and errors.
 
 Topics covered:
 - Programming fundamentals: data types, variables, control flow, functions.

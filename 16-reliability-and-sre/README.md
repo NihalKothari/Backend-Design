@@ -1,13 +1,13 @@
 # Reliability and SRE
 
 This module teaches how to keep systems reliable under real-world load and
-failure, with a principal-level focus on operational maturity.
+failure, scaling from fundamentals to principal-level operational maturity.
 
-Principal-level expectations:
-- Define reliability targets and error budget policies.
-- Lead incident response, postmortems, and remediation planning.
-- Establish resilience patterns and degradation strategies.
-- Drive cross-team alignment on reliability investments.
+Progression expectations:
+- Beginner: Learn reliability basics and SLI/SLO concepts.
+- Intermediate: Participate in incident response and runbooks.
+- Senior: Apply resilience patterns and capacity planning.
+- Principal: Define error budgets and reliability strategy.
 
 Topics covered:
 - Reliability principles and error budgets.

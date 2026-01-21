@@ -1,13 +1,13 @@
 # Messaging and Event-Driven Systems
 
 This module focuses on asynchronous communication and event-driven design,
-with a principal-level focus on reliability and contract governance.
+scaling from fundamentals to principal-level reliability concerns.
 
-Principal-level expectations:
-- Define messaging standards and schema evolution policies.
-- Ensure event delivery guarantees meet business requirements.
-- Establish patterns for idempotency and ordering.
-- Lead operational readiness for queue and stream systems.
+Progression expectations:
+- Beginner: Understand queues, pub/sub, and streams.
+- Intermediate: Apply delivery semantics, retries, and DLQs.
+- Senior: Handle ordering, idempotency, and schema evolution.
+- Principal: Define messaging standards and operational readiness.
 
 Topics covered:
 - Queues vs pub/sub vs streams.

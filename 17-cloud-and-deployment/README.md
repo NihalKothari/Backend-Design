@@ -1,13 +1,13 @@
 # Cloud and Deployment
 
 This module covers deploying services on cloud platforms and managing
-infrastructure, with a principal-level focus on scale, cost, and governance.
+infrastructure, scaling from fundamentals to principal-level governance.
 
-Principal-level expectations:
-- Define cloud architecture standards and reference deployments.
-- Establish cost controls, tagging, and budgeting practices.
-- Lead multi-region and disaster recovery planning.
-- Align IAM, network policies, and compliance requirements.
+Progression expectations:
+- Beginner: Understand cloud primitives and basic deployments.
+- Intermediate: Use managed services and IAM safely.
+- Senior: Design autoscaling, multi-region, and cost controls.
+- Principal: Define cloud standards, compliance, and DR planning.
 
 Topics covered:
 - Cloud primitives: compute, storage, networking.

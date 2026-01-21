@@ -1,13 +1,13 @@
 # Testing and Quality
 
-This module covers how to ensure correctness and maintainability, with a
-principal-level focus on test strategy and quality governance.
+This module covers how to ensure correctness and maintainability, scaling from
+fundamentals to principal-level test strategy and governance.
 
-Principal-level expectations:
-- Define testing standards and quality gates across services.
-- Establish contract testing and compatibility checks.
-- Set coverage goals aligned with risk and criticality.
-- Lead reviews for high-impact changes and regression risk.
+Progression expectations:
+- Beginner: Write unit tests and use test doubles.
+- Intermediate: Build integration and end-to-end test suites.
+- Senior: Establish contract testing and coverage strategy.
+- Principal: Define quality gates and risk-based testing.
 
 Topics covered:
 - Unit testing patterns and best practices.

@@ -1,13 +1,13 @@
 # Security and Authentication
 
 This module covers security fundamentals and how to protect backend systems,
-with a principal-level focus on risk management and secure-by-default design.
+scaling from basics to principal-level risk management.
 
-Principal-level expectations:
-- Define security baselines and review criteria for services.
-- Lead threat modeling and prioritize mitigation work.
-- Standardize authentication and authorization patterns.
-- Ensure compliance with data handling and audit requirements.
+Progression expectations:
+- Beginner: Learn OWASP risks and input validation basics.
+- Intermediate: Implement auth flows, hashing, and secrets handling.
+- Senior: Lead threat modeling and choose authorization models.
+- Principal: Define security baselines and compliance requirements.
 
 Topics covered:
 - Security principles: least privilege, defense in depth.

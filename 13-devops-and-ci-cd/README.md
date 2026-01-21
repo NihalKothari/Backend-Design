@@ -1,13 +1,13 @@
 # DevOps and CI/CD
 
-This module covers delivery pipelines and operational automation, with a
-principal-level focus on release governance and safety.
+This module covers delivery pipelines and operational automation, scaling from
+fundamentals to principal-level release governance and safety.
 
-Principal-level expectations:
-- Define CI/CD standards, quality gates, and deployment policies.
-- Establish safe release practices: canaries, rollbacks, and approvals.
-- Automate infrastructure changes with auditable pipelines.
-- Align release cadence with product and reliability goals.
+Progression expectations:
+- Beginner: Set up basic CI pipelines for build and test.
+- Intermediate: Build containers and manage environments.
+- Senior: Choose deployment strategies and IaC practices.
+- Principal: Define CI/CD standards, quality gates, and policies.
 
 Topics covered:
 - CI pipelines: build, test, lint, and quality gates.

@@ -1,13 +1,13 @@
 # Data Structures and Algorithms
 
-This module focuses on algorithmic thinking with a principal-level emphasis on
+This module builds algorithmic thinking from fundamentals to principal-level
 performance tradeoffs and production constraints.
 
-Principal-level expectations:
-- Evaluate algorithm choices against latency, memory, and cost budgets.
-- Establish guidance on data structure use for common service patterns.
-- Identify performance risks in reviews and propose simpler alternatives.
-- Translate complexity analysis into operational impact.
+Progression expectations:
+- Beginner: Learn Big O and core structures like arrays and stacks.
+- Intermediate: Implement trees/graphs, sorting, and dynamic programming.
+- Senior: Choose algorithms for latency, memory, and cost constraints.
+- Principal: Set org guidance and translate complexity to ops impact.
 
 Topics covered:
 - Big O notation, time/space complexity, amortized analysis.

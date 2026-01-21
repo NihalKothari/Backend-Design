@@ -1,13 +1,13 @@
 # Backend Architecture and Patterns
 
 This module covers architectural styles and patterns used to build maintainable
-backend systems, with a principal-level focus on system boundaries and tradeoffs.
+backend systems, scaling from fundamentals to principal-level tradeoffs.
 
-Principal-level expectations:
-- Define reference architectures and integration patterns.
-- Lead tradeoff discussions for monoliths vs microservices.
-- Set standards for service boundaries and data ownership.
-- Drive ADRs and cross-team alignment on architecture changes.
+Progression expectations:
+- Beginner: Understand monoliths, layers, and basic architecture terms.
+- Intermediate: Apply clean/hexagonal architecture and DI concepts.
+- Senior: Define service boundaries and integration patterns.
+- Principal: Drive reference architectures and cross-team alignment.
 
 Topics covered:
 - Monolith vs microservices vs modular monoliths.

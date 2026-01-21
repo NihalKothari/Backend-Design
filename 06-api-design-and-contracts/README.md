@@ -1,13 +1,13 @@
 # API Design and Contracts
 
-This module teaches how to design stable, predictable APIs and their contracts,
-with a principal-level focus on governance and long-term compatibility.
+This module teaches how to design stable, predictable APIs and contracts,
+scaling from fundamentals to principal-level governance.
 
-Principal-level expectations:
-- Establish organization-wide API standards and versioning policies.
-- Lead design reviews to prevent breaking changes and unsafe patterns.
-- Define error, pagination, and validation conventions.
-- Ensure contracts align with security and compliance requirements.
+Progression expectations:
+- Beginner: Use REST basics, status codes, and resource modeling.
+- Intermediate: Design pagination, filtering, and validation rules.
+- Senior: Apply versioning, idempotency, and error conventions.
+- Principal: Set org standards and enforce compatibility and security.
 
 Topics covered:
 - Resource modeling and naming conventions.

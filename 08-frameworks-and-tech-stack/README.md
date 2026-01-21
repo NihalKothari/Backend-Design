@@ -1,13 +1,13 @@
 # Frameworks and Tech Stack
 
 This module helps you choose and use frameworks, runtimes, and tooling to build
-production services, with a principal-level focus on long-term maintainability.
+production services, scaling from fundamentals to long-term maintainability.
 
-Principal-level expectations:
-- Define approved stacks and upgrade cadences for teams.
-- Evaluate ecosystem maturity, performance, and staffing impact.
-- Standardize configuration, logging, and dependency management.
-- Reduce platform risk through consistent tooling and automation.
+Progression expectations:
+- Beginner: Use a framework for routing, middleware, and dependencies.
+- Intermediate: Manage configuration, logging, and packaging practices.
+- Senior: Evaluate stack tradeoffs for performance and maintainability.
+- Principal: Define approved stacks and upgrade cadence for teams.
 
 Topics covered:
 - Selecting language/runtime (Go, Java, Node, Python, etc.).

@@ -1,13 +1,13 @@
 # Observability and Monitoring
 
 This module focuses on measuring system health and troubleshooting issues,
-with a principal-level focus on SLOs and operational readiness.
+scaling from fundamentals to principal-level operational readiness.
 
-Principal-level expectations:
-- Define SLIs, SLOs, and alerting standards for teams.
-- Ensure logs and traces support efficient root cause analysis.
-- Drive adoption of observability tooling and dashboards.
-- Establish on-call practices and escalation playbooks.
+Progression expectations:
+- Beginner: Understand logs, metrics, and traces.
+- Intermediate: Instrument services and build dashboards.
+- Senior: Define SLOs and lead root cause analysis.
+- Principal: Set observability standards and on-call practices.
 
 Topics covered:
 - Metrics, logs, and traces and how they work together.

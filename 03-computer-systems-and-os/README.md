@@ -1,13 +1,13 @@
 # Computer Systems and Operating Systems
 
-This module explains how software interacts with the OS and hardware, with a
-principal-level focus on performance, resource management, and reliability.
+This module explains how software interacts with the OS and hardware, scaling
+from fundamentals to principal-level performance and reliability concerns.
 
-Principal-level expectations:
-- Reason about thread models, scheduling, and contention in production.
-- Set guidance on resource limits, memory usage, and I/O tuning.
-- Lead investigations for performance regressions and system bottlenecks.
-- Evaluate runtime and container choices based on operational behavior.
+Progression expectations:
+- Beginner: Understand processes, threads, and memory basics.
+- Intermediate: Apply concurrency primitives and I/O models correctly.
+- Senior: Debug bottlenecks and tune resource usage in production.
+- Principal: Set resource limits and lead performance investigations.
 
 Topics covered:
 - Processes vs threads and scheduling fundamentals.

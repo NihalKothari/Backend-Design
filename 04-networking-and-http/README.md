@@ -1,13 +1,13 @@
 # Networking and HTTP
 
-This module covers how data moves over networks and the web protocols used by
-backend systems, with a principal-level focus on reliability and global scale.
+This module covers how data moves over networks and web protocols, scaling
+from fundamentals to principal-level reliability and global scale concerns.
 
-Principal-level expectations:
-- Design network architectures that balance latency, cost, and resilience.
-- Define standard timeout, retry, and backoff policies across services.
-- Evaluate TLS, load balancing, and edge strategies for secure delivery.
-- Lead reviews of API protocols and connectivity risks.
+Progression expectations:
+- Beginner: Learn HTTP basics, DNS, and TCP vs UDP.
+- Intermediate: Use TLS and understand load balancers and proxies.
+- Senior: Define timeout, retry, and backoff policies across services.
+- Principal: Architect network strategies for latency, cost, and resilience.
 
 Topics covered:
 - OSI/TCP/IP layers and how packets move through the stack.

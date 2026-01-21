@@ -1,13 +1,13 @@
 # Capstone Case Studies
 
 This module applies the full curriculum to realistic system design problems,
-with a principal-level focus on decision making and leadership.
+scaling from fundamentals to principal-level decision making and leadership.
 
-Principal-level expectations:
-- Produce end-to-end design docs with explicit tradeoffs.
-- Provide migration plans and operational readiness checklists.
-- Define success metrics, risks, and mitigation strategies.
-- Lead reviews and align cross-team stakeholders.
+Progression expectations:
+- Beginner: Design small systems with clear requirements.
+- Intermediate: Build end-to-end designs for common domains.
+- Senior: Address scaling, failures, and operational plans.
+- Principal: Lead reviews, migrations, and stakeholder alignment.
 
 Topics covered:
 - End-to-end system design for common domains:
