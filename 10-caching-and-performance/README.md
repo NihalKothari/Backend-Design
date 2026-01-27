@@ -15,6 +15,7 @@ includes key concepts, a real-world example, and a diagram.
 ## How to use this module
 - Start with caching layers and strategies.
 - Create a small artifact per subtopic (diagram, benchmark, checklist).
+- Pair each section with a real service for measurement.
 
 ## Subtopics
 1. [Cache Layers](01-cache-layers.md)
@@ -31,3 +32,11 @@ includes key concepts, a real-world example, and a diagram.
 - Cache hierarchy diagram for a service.
 - Performance budget with latency targets.
 - Load test plan with success criteria.
+
+## Additional real-world practice ideas
+- Run a cache hit/miss analysis and document eviction policy changes.
+- Create a p99 latency budget for a critical API.
+
+## Official documentation
+- https://www.rfc-editor.org/rfc/rfc9111
+- https://redis.io/docs/
