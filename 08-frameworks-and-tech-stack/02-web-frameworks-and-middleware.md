@@ -17,6 +17,13 @@ improve speed and consistency.
 - Middleware for auth, logging, and validation.
 - Dependency injection and lifecycle hooks.
 
+## Detailed explanation
+- **Routing** defines how requests map to handlers; consistent patterns reduce
+  surprises for clients.
+- **Middleware** centralizes cross-cutting concerns like auth and logging.
+- **Lifecycle hooks** allow initialization and teardown for resources like DB
+  connections.
+
 ## Real-world example: Auth middleware
 A service validates JWTs in middleware before routing requests.
 
@@ -29,7 +36,17 @@ flowchart LR
   D --> E[Response]
 ```
 
+## Additional real-world examples
+- Middleware injects request IDs into logs for correlation.
+- Rate limiting enforced at the framework layer before handler execution.
+- Global error handler maps exceptions to consistent API responses.
+
 ## Practical checklist
 - Keep middleware focused and small.
 - Avoid hidden side effects in middleware.
 - Standardize error handling in the framework.
+
+## Official documentation
+- https://expressjs.com/en/guide/using-middleware.html
+- https://docs.djangoproject.com/en/stable/topics/http/middleware/
+- https://docs.spring.io/spring-boot/docs/current/reference/html/web.html

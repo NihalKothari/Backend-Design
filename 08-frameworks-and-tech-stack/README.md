@@ -16,6 +16,7 @@ and a diagram.
 ## How to use this module
 - Start with runtime selection and frameworks.
 - Produce a small artifact per subtopic (decision doc, diagram, or checklist).
+- Review at least one existing service to see real tradeoffs.
 
 ## Subtopics
 1. [Language and Runtime Selection](01-language-and-runtime-selection.md)
@@ -32,3 +33,11 @@ and a diagram.
 - Stack selection decision record.
 - Standard service template with logging and config.
 - Upgrade plan and dependency policy.
+
+## Additional real-world practice ideas
+- Compare two runtimes for a sample service and document tradeoffs.
+- Build a local dev environment with compose and health checks.
+
+## Official documentation
+- https://docs.docker.com/
+- https://kubernetes.io/docs/concepts/
