@@ -16,6 +16,7 @@ diagram.
 ## How to use this module
 - Start with architecture styles and move into boundaries and patterns.
 - Produce a diagram or ADR per subtopic.
+- Tie decisions to real incidents or scaling constraints you have seen.
 
 ## Subtopics
 1. [Architectural Styles](01-architectural-styles.md)
@@ -31,3 +32,11 @@ diagram.
 - ADR comparing monolith vs microservices.
 - System context diagram with boundaries.
 - Integration pattern decision record.
+
+## Additional real-world practice ideas
+- Draft an ADR for introducing a service mesh and list rollout risks.
+- Map data ownership for three domains and identify shared data flows.
+
+## Official documentation
+- https://aws.amazon.com/architecture/
+- https://learn.microsoft.com/en-us/azure/architecture/
