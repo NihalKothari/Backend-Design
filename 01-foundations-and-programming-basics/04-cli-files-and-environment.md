@@ -27,6 +27,10 @@ consistent approach prevents misconfiguration incidents.
   storing secrets in plain text. Use a secrets manager for sensitive values.
 - **Configuration validation** should fail fast at startup with clear errors.
   This avoids ambiguous runtime behavior and hidden defaults.
+- **Atomic file writes** reduce corruption risk. Write to a temp file, flush,
+  then rename into place so readers never see partial output.
+- **Config naming conventions** (prefixes, uppercase, consistent units) make
+  ops handoffs safer and reduce guesswork.
 
 ## Real-world example: Config loader
 A service loads config from flags, env, and a file.
@@ -44,7 +48,21 @@ flowchart LR
   E[CLI flags] --> D
 ```
 
+## Additional real-world examples
+- Migration CLI that supports `--dry-run` and `--target-version` flags with
+  human-friendly help text.
+- Service loads a JSON config but overrides a few values via environment
+  variables during staging tests.
+- Batch job writes output files via temp + rename to avoid partial reads by
+  downstream consumers.
+
 ## Practical checklist
 - Validate required config at startup.
 - Avoid putting secrets in files or logs.
 - Document every config key with purpose.
+
+## Official documentation
+- https://www.rfc-editor.org/rfc/rfc8259
+- https://yaml.org/spec/
+- https://pubs.opengroup.org/onlinepubs/9699919799/functions/getenv.html
+- https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html

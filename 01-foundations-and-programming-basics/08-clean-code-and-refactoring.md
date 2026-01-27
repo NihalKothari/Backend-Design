@@ -27,6 +27,10 @@ Clean code lowers cognitive load and makes maintenance cheaper.
   to test and more likely to contain subtle bugs.
 - **Incremental refactoring with tests** provides safety. Add tests before
   structural changes to prevent regressions.
+- **Duplication removal** reduces divergence. When the same logic appears in
+  multiple places, bugs are fixed once instead of many times.
+- **Boundary refactors** clarify ownership. Moving validation to API edges or
+  persistence logic to repositories simplifies call sites.
 
 ## Real-world example: Payment rules refactor
 A payment rule engine has nested conditions. The team extracts rules into
@@ -40,7 +44,18 @@ flowchart LR
   C --> D[Verify behavior]
 ```
 
+## Additional real-world examples
+- Refactoring request validation into a shared helper so all endpoints enforce
+  the same rules.
+- Replacing nested conditionals with early returns in a feature-flag check.
+- Splitting a large service class into smaller modules by responsibility.
+
 ## Practical checklist
 - Refactor in small, reviewable steps.
 - Add tests before structural changes.
 - Avoid premature abstraction.
+
+## Official documentation
+- https://go.dev/doc/effective_go
+- https://docs.python.org/3/faq/design.html
+- https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/

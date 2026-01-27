@@ -27,6 +27,11 @@ debugging and reduce outages.
   to enable filtering and correlation. Free-form logs are harder to search.
 - **Correlation IDs** tie a request across services and logs. They should be
   generated at the edge and propagated through every hop.
+- **Error classification** separates retryable failures (timeouts) from
+  non-retryable ones (invalid input). That distinction drives safer retry and
+  alerting behavior.
+- **Log hygiene** matters. Sample noisy logs, redact secrets, and avoid logging
+  entire payloads unless needed for debugging.
 
 ## Real-world example: API error response
 A service returns a consistent error shape with a request ID for debugging.
@@ -51,7 +56,20 @@ flowchart LR
   E --> F[Error response]
 ```
 
+## Additional real-world examples
+- Ingress generates a request ID, forwards it via headers, and every service
+  logs it to stitch traces during incident response.
+- Payment API returns a stable error code that maps to a user-friendly message
+  in the UI and a retry policy in the backend.
+- Background jobs log failures with job ID and attempt number to distinguish
+  transient from permanent errors.
+
 ## Practical checklist
 - Never hide errors; return or log them.
 - Add request IDs to logs and responses.
 - Avoid logging sensitive data.
+
+## Official documentation
+- https://www.rfc-editor.org/rfc/rfc9457
+- https://www.w3.org/TR/trace-context/
+- https://opentelemetry.io/docs/concepts/context-propagation/
