@@ -18,6 +18,16 @@ together. Understanding isolation avoids subtle data bugs.
 - Locks, deadlocks, optimistic vs pessimistic concurrency.
 - Idempotency and retry-safe operations.
 
+## Detailed explanation
+- **ACID** guarantees keep data correct under failures. Define clear transaction
+  boundaries so related updates succeed or fail together.
+- **Isolation levels** trade concurrency for consistency. Read committed is
+  common; serializable is safest but can reduce throughput.
+- **Locking** avoids races but can cause deadlocks. Use consistent lock order
+  and short transactions.
+- **Optimistic concurrency** uses version checks to reduce locking for
+  low-conflict workloads.
+
 ## Real-world example: Wallet transfer
 Transfer funds between two accounts in a single transaction.
 
@@ -41,7 +51,16 @@ sequenceDiagram
   App->>DB: COMMIT
 ```
 
+## Additional real-world examples
+- Order creation uses a transaction to insert order, items, and ledger entries.
+- Inventory updates use optimistic locking with a version column.
+- Background reconciliation job retries transactions after serialization errors.
+
 ## Practical checklist
 - Keep transactions short to reduce lock contention.
 - Handle retries for serialization or deadlock errors.
 - Use idempotency keys for external-facing write APIs.
+
+## Official documentation
+- https://www.postgresql.org/docs/current/transaction-iso.html
+- https://dev.mysql.com/doc/refman/8.0/en/innodb-locking.html

@@ -17,6 +17,7 @@ at least one diagram.
 - Start at Fundamentals and proceed in order.
 - Build a small artifact per subtopic (diagram, query, or plan).
 - Revisit advanced sections as you move up the ladder.
+- Tie each subtopic to a real service in your stack for concrete practice.
 
 ## Subtopics
 1. [Fundamentals](01-fundamentals.md) - Relational vs NoSQL, SQL basics, keys.
@@ -37,3 +38,12 @@ at least one diagram.
 - Migration plan with rollback steps.
 - DR runbook with RPO/RTO targets.
 - Security and governance checklist.
+
+## Additional real-world practice ideas
+- Capture a slow query plan and document the index changes you would apply.
+- Write a migration checklist for zero-downtime schema changes.
+
+## Official documentation
+- https://www.postgresql.org/docs/current/
+- https://dev.mysql.com/doc/
+- https://www.mongodb.com/docs/manual/

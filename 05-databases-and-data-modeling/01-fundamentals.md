@@ -18,6 +18,16 @@ cleanly, query it correctly, and avoid brittle schemas.
 - SQL CRUD: SELECT, INSERT, UPDATE, DELETE.
 - Joins, GROUP BY, HAVING, aggregates.
 
+## Detailed explanation
+- **Relational databases** enforce schema and constraints, which protects data
+  integrity; **NoSQL** often trades strict schema for flexible scaling.
+- **Primary keys** uniquely identify rows; **foreign keys** enforce references
+  and keep relationships consistent.
+- **CRUD operations** are the base for all data access patterns; consistent
+  naming and indexing make them predictable.
+- **Aggregations** with GROUP BY power analytics and dashboards but require
+  careful indexing to avoid full scans.
+
 ## Real-world example: SaaS user profiles
 A SaaS app stores users and teams. Each user can belong to multiple teams.
 
@@ -70,7 +80,17 @@ erDiagram
   }
 ```
 
+## Additional real-world examples
+- Audit tables store immutable change history for compliance reporting.
+- A product catalog uses a separate table for localized text fields.
+- Feature flags stored in a key-value table for quick rollout toggles.
+
 ## Practical checklist
 - Use primary keys on all tables.
 - Add foreign keys for relationships you need to enforce.
 - Keep schemas simple until access patterns justify complexity.
+
+## Official documentation
+- https://www.postgresql.org/docs/current/sql.html
+- https://dev.mysql.com/doc/
+- https://www.mongodb.com/docs/manual/core/data-modeling-introduction/
