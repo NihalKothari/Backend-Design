@@ -18,6 +18,15 @@ invalidate incorrectly.
 - CDN edge caching vs origin caching.
 - Private vs public caches.
 
+## Detailed explanation
+- **Cache-Control directives** define freshness and revalidation behavior.
+  `public` allows shared caches; `private` restricts to the client.
+- **ETags** support conditional requests so clients can avoid full downloads.
+- **Stale-while-revalidate** keeps latency low while edges refresh in the
+  background, reducing stampedes.
+- **Cache invalidation** should be explicit and testable to prevent serving
+  outdated content.
+
 ## Real-world example: News traffic spike
 A news site uses CDN caching with short TTLs for headlines and longer TTLs for
 static assets to handle a traffic surge during a breaking event.
@@ -36,7 +45,16 @@ flowchart LR
   E --> C
 ```
 
+## Additional real-world examples
+- Product images use long-lived immutable caching with versioned URLs.
+- API returns `Cache-Control: no-store` for personalized responses.
+- CDN purge API is called on content updates to refresh critical assets.
+
 ## Practical checklist
 - Cache static assets aggressively; tune TTLs for dynamic data.
 - Use ETags to reduce payloads on revalidation.
 - Ensure cache purge paths are tested and documented.
+
+## Official documentation
+- https://www.rfc-editor.org/rfc/rfc9111
+- https://www.rfc-editor.org/rfc/rfc5861

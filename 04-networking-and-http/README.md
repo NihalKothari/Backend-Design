@@ -17,6 +17,7 @@ example, and at least one diagram.
 - Start at Networking Fundamentals and proceed in order.
 - Build a small artifact per subtopic (diagram, policy, or checklist).
 - Revisit advanced sections as you move up the ladder.
+- Compare real production traces with the diagrams to validate assumptions.
 
 ## Subtopics
 1. [Networking Fundamentals](01-networking-fundamentals.md) - OSI/TCP-IP, latency, MTU.
@@ -36,3 +37,12 @@ example, and at least one diagram.
 - Standardized timeout and retry policy for your services.
 - CDN caching strategy with cache-control directives.
 - Global routing and failover plan for a critical API.
+
+## Additional real-world practice ideas
+- Capture a packet trace for a slow API call and annotate each hop's latency.
+- Document a DNS cutover plan with rollback steps and TTL timelines.
+
+## Official documentation
+- https://www.rfc-editor.org/rfc/rfc9110
+- https://www.rfc-editor.org/rfc/rfc1034
+- https://www.rfc-editor.org/rfc/rfc8446
