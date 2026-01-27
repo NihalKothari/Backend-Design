@@ -17,6 +17,15 @@ Good models reduce bugs, simplify queries, and make future changes safer.
 - Constraints: primary, foreign, unique, check.
 - Data types and NULL handling.
 
+## Detailed explanation
+- **Normalization** reduces duplication and update anomalies. Denormalization
+  is justified when read performance or analytics require it.
+- **Relationship types** guide schema shape. Many-to-many needs join tables to
+  preserve integrity.
+- **Constraints** protect invariants (unique emails, non-negative balances).
+- **NULL semantics** differ across databases; avoid NULL for fields that should
+  always exist.
+
 ## Real-world example: Ecommerce orders
 Users place orders with multiple items and payments. The model normalizes
 products and order items, while denormalizing `order_total` for fast list views.
@@ -69,7 +78,17 @@ erDiagram
   }
 ```
 
+## Additional real-world examples
+- Denormalized order summary table used for dashboard views.
+- Soft-delete flag added with a partial index for active rows only.
+- Check constraints prevent negative inventory counts.
+
 ## Practical checklist
 - Normalize by default; denormalize for proven access patterns.
 - Use foreign keys and constraints to protect integrity.
 - Document ownership and data contracts between teams.
+
+## Official documentation
+- https://www.postgresql.org/docs/current/ddl-constraints.html
+- https://dev.mysql.com/doc/refman/8.0/en/constraint-enforcement.html
+- https://www.mongodb.com/docs/manual/core/schema-validation/

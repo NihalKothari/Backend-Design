@@ -18,6 +18,14 @@ users, reduce risk, and ensure compliance.
 - Row-level security and tenant isolation.
 - Data retention, deletion, and audit logging.
 
+## Detailed explanation
+- **Least privilege** limits blast radius. Separate read/write roles and avoid
+  shared admin accounts.
+- **Encryption** should cover transit (TLS) and storage (disk, backups).
+- **Row-level security** enforces tenant isolation inside the database, not
+  just in application logic.
+- **Retention and deletion** policies support compliance and reduce risk.
+
 ## Real-world example: Healthcare data access
 Clinicians can only access patients they are assigned to, with audited access.
 
@@ -29,7 +37,16 @@ flowchart LR
   D --> E[Audit log]
 ```
 
+## Additional real-world examples
+- Separate analytics role with masked PII to reduce exposure.
+- Row-level policies restrict multi-tenant access to a single tenant ID.
+- Audit logs exported to immutable storage for compliance reviews.
+
 ## Practical checklist
 - Rotate credentials and manage secrets centrally.
 - Encrypt backups and verify key rotation procedures.
 - Define retention and deletion timelines for PII.
+
+## Official documentation
+- https://www.postgresql.org/docs/current/ddl-rowsecurity.html
+- https://dev.mysql.com/doc/refman/8.0/en/innodb-data-encryption.html

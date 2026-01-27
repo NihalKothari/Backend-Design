@@ -16,6 +16,8 @@ subtopic includes key concepts, a real-world example, and a diagram.
 - Start at programming fundamentals and proceed in order.
 - Create a small artifact per subtopic (script, diagram, or checklist).
 - Revisit sections as your scope grows.
+- Pair each topic with a production incident or postmortem to connect concepts
+  to real-world outcomes.
 
 ## Subtopics
 1. [Programming Fundamentals](01-programming-fundamentals.md)
@@ -31,3 +33,14 @@ subtopic includes key concepts, a real-world example, and a diagram.
 - Simple CLI tool with config and logging.
 - Code review checklist and formatting rules.
 - Refactoring plan for a small legacy module.
+
+## Additional real-world practice ideas
+- Build a small service that reads configuration from flags, env, and files,
+  then emits structured logs for every request.
+- Create a debugging playbook that documents how to reproduce and profile a
+  slow endpoint in your stack.
+
+## Official documentation
+- https://git-scm.com/docs
+- https://docs.github.com/en/actions
+- https://go.dev/doc/

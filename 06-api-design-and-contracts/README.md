@@ -15,6 +15,7 @@ includes key concepts, a real-world example, and a diagram.
 ## How to use this module
 - Start with resource modeling and HTTP conventions.
 - Produce a small artifact per subtopic (contract, diagram, checklist).
+- Align examples with an existing API in your org for realism.
 
 ## Subtopics
 1. [Resource Modeling and Naming](01-resource-modeling-and-naming.md)
@@ -30,3 +31,11 @@ includes key concepts, a real-world example, and a diagram.
 - OpenAPI spec for a core resource.
 - Error format and status code policy.
 - Versioning and compatibility checklist.
+
+## Additional real-world practice ideas
+- Draft a rate limit policy with headers and error codes for a public API.
+- Write a migration guide for a breaking change you avoided via versioning.
+
+## Official documentation
+- https://spec.openapis.org/oas/latest.html
+- https://www.rfc-editor.org/rfc/rfc9110

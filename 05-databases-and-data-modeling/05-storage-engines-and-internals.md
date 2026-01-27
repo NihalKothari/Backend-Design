@@ -18,6 +18,13 @@ Knowing how writes and reads flow helps you tune the system.
 - B-tree indexes and page splits.
 - Compaction and vacuum in log-structured engines.
 
+## Detailed explanation
+- **WAL/redo logs** allow crash recovery by replaying committed changes.
+- **Buffer pools** keep hot pages in memory; low hit rates indicate I/O
+  pressure and poor cache sizing.
+- **B-tree page splits** can fragment data; sequential keys often reduce splits.
+- **Log-structured engines** trade write speed for background compaction work.
+
 ## Real-world example: Order service write path
 An order service uses InnoDB to get crash recovery and row-level locking.
 
@@ -30,7 +37,17 @@ flowchart LR
   C --> E
 ```
 
+## Additional real-world examples
+- Write-heavy tables move to an LSM engine to improve ingest throughput.
+- Buffer pool increased after monitoring showed frequent disk reads.
+- Vacuum tuned to reclaim space after large deletes.
+
 ## Practical checklist
 - Monitor buffer pool hit rate and disk IO.
 - Size redo logs and checkpoints to match write volume.
 - Avoid over-indexing write-heavy tables.
+
+## Official documentation
+- https://dev.mysql.com/doc/refman/8.0/en/innodb-storage-engine.html
+- https://www.postgresql.org/docs/current/wal-intro.html
+- https://github.com/facebook/rocksdb/wiki

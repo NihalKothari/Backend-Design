@@ -30,6 +30,12 @@ your code predictable and easier to reason about under pressure.
   effects to keep behavior predictable.
 - **Input validation** is your first line of defense. Validate at boundaries,
   return actionable errors, and avoid passing bad data deeper into the system.
+- **Type conversions** deserve explicit handling. Most inputs arrive as strings
+  (CLI args, HTTP, config files), so normalize and validate before you rely on
+  numeric or boolean semantics.
+- **Loop invariants** help you reason about correctness. Decide what must be
+  true each iteration (for example, "processed items <= limit") to avoid
+  off-by-one errors and runaway loops.
 
 ## Real-world example: Simple rate limiter
 A small script rejects requests after a threshold.
@@ -49,7 +55,19 @@ flowchart TD
   B -- no --> D[Allow]
 ```
 
+## Additional real-world examples
+- Parsing CLI flags and environment variables, failing fast when required
+  settings are missing.
+- Normalizing user input (trim, lowercase) before storing to avoid duplicates.
+- Incrementing retry counters with a max cap to prevent infinite retries.
+
 ## Practical checklist
 - Use guard clauses for invalid input.
 - Keep functions small and focused.
 - Write tests for common and edge cases.
+
+## Official documentation
+- https://docs.python.org/3/tutorial/controlflow.html
+- https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html
+- https://go.dev/ref/spec#Statements
+- https://doc.rust-lang.org/book/ch03-03-how-functions-work.html

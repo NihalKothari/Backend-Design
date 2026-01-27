@@ -15,6 +15,7 @@ subtopic includes key concepts, a real-world example, and a diagram.
 ## How to use this module
 - Start with security principles and threat modeling.
 - Create a checklist or diagram for each subtopic.
+- Tie topics to real security incidents or audits.
 
 ## Subtopics
 1. [Security Principles](01-security-principles.md)
@@ -30,3 +31,11 @@ subtopic includes key concepts, a real-world example, and a diagram.
 - Threat model diagram for a critical API.
 - Security baseline checklist for services.
 - Auth and authorization decision record.
+
+## Additional real-world practice ideas
+- Review a recent incident and map it to missing controls in this module.
+- Draft a secrets rotation runbook for a core service.
+
+## Official documentation
+- https://www.nist.gov/cyberframework
+- https://owasp.org/Top10/

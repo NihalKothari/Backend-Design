@@ -27,6 +27,10 @@ performance regressions.
   Profiling should happen with realistic data to avoid misleading results.
 - **Flame graphs** visualize hotspots across call stacks. They help prioritize
   optimizations that deliver the biggest impact.
+- **Binary search for regressions** (good vs bad builds) narrows down when a
+  performance issue started and avoids speculative fixes.
+- **Sampling vs tracing** tools trade detail for overhead. Pick low-overhead
+  profilers in production and deeper traces in staging.
 
 ## Real-world example: Slow endpoint
 A report endpoint slows down. Profiling reveals a slow JSON serialization step.
@@ -40,7 +44,18 @@ flowchart LR
   D --> E[Fix + verify]
 ```
 
+## Additional real-world examples
+- Memory leak in a worker traced to an unbounded cache map.
+- Slow API due to N+1 queries surfaced by profiling and query logs.
+- CPU spike during peak hours linked to a regex running on large payloads.
+
 ## Practical checklist
 - Always capture exact inputs and timestamps.
 - Profile with realistic traffic when possible.
 - Verify fixes with regression tests.
+
+## Official documentation
+- https://go.dev/doc/diagnostics
+- https://docs.python.org/3/library/profile.html
+- https://nodejs.org/api/inspector.html
+- https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/

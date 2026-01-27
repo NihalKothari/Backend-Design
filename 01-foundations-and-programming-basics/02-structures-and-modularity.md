@@ -30,6 +30,12 @@ makes changes safer.
   leak state in unexpected ways.
 - **Modules and packaging** set boundaries for ownership and reuse. A good
   module exposes a small public surface and keeps internal helpers private.
+- **Dependency injection** keeps construction separate from usage. When modules
+  receive dependencies via parameters or constructors, you can swap
+  implementations without editing call sites.
+- **Stable module boundaries** reduce churn. Expose only what downstream users
+  need, version public interfaces carefully, and keep internal helpers scoped
+  to the module.
 
 ## Real-world example: Notification providers
 An app sends notifications via email or SMS. A common interface makes it easy
@@ -57,7 +63,21 @@ flowchart LR
   B --> D[SMS notifier]
 ```
 
+## Additional real-world examples
+- Storage abstraction that swaps local disk, S3, or GCS without changing the
+  calling code.
+- Feature-flag module that centralizes rollout logic instead of scattering
+  conditional checks throughout handlers.
+- Plugin-based payment providers where each integration conforms to the same
+  interface.
+
 ## Practical checklist
 - Keep modules small and cohesive.
 - Avoid cyclic dependencies.
 - Prefer composition to deep inheritance chains.
+
+## Official documentation
+- https://docs.python.org/3/tutorial/classes.html
+- https://docs.oracle.com/javase/tutorial/java/concepts/
+- https://go.dev/doc/code
+- https://learn.microsoft.com/en-us/dotnet/standard/

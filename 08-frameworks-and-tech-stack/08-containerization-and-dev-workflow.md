@@ -16,6 +16,11 @@ Containers provide consistent environments across dev, test, and prod.
 - Local development with compose.
 - Base images and security updates.
 
+## Detailed explanation
+- **Dockerfiles** should be deterministic and cache-friendly to speed builds.
+- **Compose** orchestrates local dependencies for consistent dev workflows.
+- **Base images** should be kept updated to reduce vulnerabilities.
+
 ## Real-world example: Local service stack
 A developer runs the API with a local database using docker compose.
 
@@ -27,7 +32,16 @@ flowchart LR
   C --> D[Local dev]
 ```
 
+## Additional real-world examples
+- Multi-stage builds reduce image size and remove build tools from runtime.
+- Local compose file mirrors production env variables for parity.
+- Health checks restart services when dependencies are unavailable.
+
 ## Practical checklist
 - Keep images small and secure.
 - Use health checks in compose.
 - Mirror production configs where possible.
+
+## Official documentation
+- https://docs.docker.com/engine/reference/builder/
+- https://docs.docker.com/compose/

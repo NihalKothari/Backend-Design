@@ -15,6 +15,8 @@ subtopic includes key concepts, a real-world example, and a diagram.
 ## How to use this module
 - Start with processes and memory before concurrency and I/O.
 - Create a small artifact per subtopic (diagram or experiment).
+- Pair topics with production telemetry (CPU, memory, disk) to connect theory
+  to real system behavior.
 
 ## Subtopics
 1. [Processes and Threads](01-processes-and-threads.md)
@@ -30,3 +32,13 @@ subtopic includes key concepts, a real-world example, and a diagram.
 - Threading model diagram for a service.
 - Experiment comparing blocking vs async I/O.
 - Memory usage profile with optimization notes.
+
+## Additional real-world practice ideas
+- Build a small benchmark that compares process vs thread throughput on your
+  workstation.
+- Capture a perf profile for a slow endpoint and document the top hotspots.
+
+## Official documentation
+- https://man7.org/linux/man-pages/
+- https://www.kernel.org/doc/html/latest/
+- https://docs.docker.com/get-started/

@@ -18,6 +18,14 @@ specific problems more efficiently.
 - Cache vs DB vs search tradeoffs.
 - Data pipelines and consistency boundaries.
 
+## Detailed explanation
+- **OLTP** optimizes for many small writes; **OLAP** optimizes for large scans
+  and aggregations; **HTAP** blends both with tradeoffs.
+- **Search stores** optimize full-text queries and relevance ranking.
+- **Time-series stores** handle high ingest and retention policies.
+- **Consistency boundaries** must be documented when data is replicated across
+  multiple stores.
+
 ## Real-world example: Analytics and search
 Transactional data is stored in OLTP, then streamed to a warehouse for BI.
 Search uses an index optimized for full-text queries.
@@ -30,7 +38,17 @@ flowchart LR
   B --> E[(Search index)]
 ```
 
+## Additional real-world examples
+- Product search uses a search index for autocomplete and relevance tuning.
+- Metrics pipeline writes to a time-series store with retention policies.
+- Graph store models social connections for friend recommendations.
+
 ## Practical checklist
 - Pick the simplest store that meets requirements.
 - Document data ownership and sync guarantees.
 - Measure cost and operational overhead per store.
+
+## Official documentation
+- https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
+- https://prometheus.io/docs/introduction/overview/
+- https://neo4j.com/docs/

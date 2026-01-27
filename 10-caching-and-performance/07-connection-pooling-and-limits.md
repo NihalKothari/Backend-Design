@@ -16,6 +16,11 @@ Unbounded connections can overload databases and cause cascading failures.
 - Connection timeouts and retries.
 - Backpressure and load shedding.
 
+## Detailed explanation
+- **Pool sizing** should align with DB max connections and workload patterns.
+- **Queue limits** prevent unbounded waits that increase tail latency.
+- **Backpressure** sheds load early to protect core systems.
+
 ## Real-world example: API spike
 A sudden traffic spike exhausts DB connections. Pool limits prevent overload
 and shed excess traffic.
@@ -28,7 +33,16 @@ flowchart LR
   B --> D[Queue]
 ```
 
+## Additional real-world examples
+- Pool size reduced after observing DB CPU saturation during spikes.
+- Requests rejected quickly when pool is full to keep latency predictable.
+- Read replicas use separate pools to isolate analytics traffic.
+
 ## Practical checklist
 - Set max connections per service.
 - Use timeouts for pool acquisition.
 - Monitor pool saturation and queue depth.
+
+## Official documentation
+- https://www.postgresql.org/docs/current/runtime-config-connection.html
+- https://www.pgbouncer.org/usage.html
